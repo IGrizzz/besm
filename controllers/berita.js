@@ -4,6 +4,11 @@ const cloudinary = require('../utils/cloudinary');
 
 class beritaController {
 
+    static resMessage (req, res){
+        res.status(200).json({
+                message:"Access Succeeded"
+            })
+    }
     static createNewBerita(req, res){
         if(req.file){
             cloudinary.uploader.upload(req.file.path)

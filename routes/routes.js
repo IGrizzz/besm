@@ -7,7 +7,7 @@ const app = express()
 const router = express.Router()
 
 
-router.grt('/', ()=>{ res.json({message: "this is backend"})})
+router.get('/', beritaController.resMessage)
 
 //berita
 
