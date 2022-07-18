@@ -6,6 +6,9 @@ const express = require('express');
 const app = express()
 const router = express.Router()
 
+
+router.grt('/', ()=>{ res.json({message: "this is backend"})})
+
 //berita
 
 router.get('/berita', beritaController.getBerita)
